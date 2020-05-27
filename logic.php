@@ -12,6 +12,9 @@ $tpath = $this->baseurl.'/templates/'.$this->template;
 // generator tag
 $this->setGenerator(null);
 
+// responsive meta tag (recommended in Bootstrap 4 doc)
+$doc->setMetadata('viewport', 'width=device-width, initial-scale=1, shrink-to-fit=no');
+
 // unset
 unset($doc->_scripts[$this->baseurl .'/media/jui/js/jquery.min.js']);
 unset($doc->_scripts[$this->baseurl .'/media/jui/js/jquery-noconflict.js']);

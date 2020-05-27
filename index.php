@@ -10,10 +10,18 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 </head>
 
 <body class="<?php echo $active->alias . ' ' . $pageclass; ?>">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!--
-        SHOW ME YOUR AWESOME CODE
-    -->
+            <div class="navbar-collapse offcanvas-collapse">
+                <jdoc:include type="modules" name="navbar" />
+            </div>
+        </nav>
+    </header>
+    
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -26,7 +34,9 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
     </div>
 
     <jdoc:include type="modules" name="debug" />
-    <script src="templates/frontend/build/app.js"></script>
+    <script src="templates/horscadre/build/app.js"></script>
+    <script src="templates/horscadre/js/script.js"></script>
+    <script src="templates/horscadre/js/offcanvas.js"></script>
 </body>
 
 </html>
