@@ -1,0 +1,49 @@
+.header {
+  background-color: $brand-yellow;
+
+  @include media-breakpoint-up(lg) {
+    background-color: $white;
+  }
+}
+
+.navbar-collapse {
+  @include media-breakpoint-up(lg) {
+    > .fullwidth {
+      background-color: $brand-yellow;
+
+      &.navbar-main {
+        position: relative;
+        top: -($spacer * 1.5);
+        padding-top: $spacer;
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.site-name {
+  flex-direction: column;
+  padding: 0 $spacer;
+}
+
+.navbar-collapse {
+  .site-name {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .slogan {
+    p {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.navbar-brand {
+  img {
+    width: 200px;
+  }
+}

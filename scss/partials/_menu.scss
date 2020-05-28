@@ -1,22 +1,24 @@
-.nav-item {
-  position: relative;
+.navbar-collapse {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.nav-link {
-  &.dropdown-toggle {
-    display: flex;
-    align-items: center;
-  }
+.navbar-above {
+  width: 100%;
+  padding-bottom: 0;
+}
 
-  > span {
-    display: flex;
-    flex-direction: column;
+.nav {
+  flex-wrap: nowrap;
+}
 
-    span {
-      @extend .dropdown-header;
-      padding: 0;
-    }
-  }
+.nav-item {
+  position: relative;
+  flex: 1 1 0;
+}
+
+.dropdown-header {
+  white-space: normal;
 }
 
 // dropdown menu
@@ -25,14 +27,38 @@
   margin-left: $spacer;
 }
 
+.header {
+  position: relative;
+}
+
+.nav-item {
+  &:last-child {
+    .dropdown-menu {
+      @extend .dropdown-menu-right;
+    }
+  }
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: $spacer / 2;
+  left: $spacer / 2;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>');
+}
+
 // offcanvas menu
-@media (max-width: 991.98px) {
-  .offcanvas-collapse {
+.offcanvas-collapse {
+  z-index: 1;
+
+  @include media-breakpoint-down(md) {
     position: fixed;
-    top: 56px; /* Height of navbar */
+    top: 0;
     bottom: 0;
     left: 100%;
-    width: 100%;
+    width: 300px;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
@@ -43,10 +69,18 @@
     transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
       -webkit-transform 0.3s ease-in-out;
   }
-  .offcanvas-collapse.open {
-    visibility: visible;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    z-index: 1;
+}
+
+@include media-breakpoint-down(md) {
+  .site {
+    &.offcanvas-open {
+      overflow-y: hidden;
+
+      .offcanvas-collapse {
+        visibility: visible;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }
   }
 }

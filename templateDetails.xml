@@ -36,6 +36,8 @@
 
 	<positions>
 		<position>navbar</position>
+		<position>navbar-above</position>
+		<position>slogan</position>
 		<position>breadcrumbs</position>
 		<position>sidebar</position>
 		<position>debug</position>

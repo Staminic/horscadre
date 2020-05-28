@@ -9,20 +9,48 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
     <jdoc:include type="head" />
 </head>
 
-<body class="<?php echo $active->alias . ' ' . $pageclass; ?>">
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body class="site <?php echo $active->alias . ' ' . $pageclass; ?>">
+    <header class="header navbar-expand-lg">
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="navbar-collapse offcanvas-collapse">
-                <jdoc:include type="modules" name="navbar" />
+        <div class="container">
+            <div class="site-name d-flex d-lg-none">
+                <a class="navbar-brand" href="/">
+                    <img src="templates/horscadre/img/hors-cadre-logo.png" alt="logo de l'Association Hors Cadre" />
+                </a>
+
+                <jdoc:include type="modules" name="slogan" />
             </div>
-        </nav>
+        </div>
+
+        <div class="navbar-collapse offcanvas-collapse">
+            <div class="fullwidth">
+                <div class="container">
+                    <div class="navbar navbar-above">
+                        <jdoc:include type="modules" name="navbar-above" />
+                    </div>
+
+                    <div class="site-name d-none d-lg-flex">
+                        <a class="navbar-brand" href="/">
+                            <img src="templates/horscadre/img/hors-cadre-logo.png" alt="logo de l'Association Hors Cadre" />
+                        </a>
+
+                        <jdoc:include type="modules" name="slogan" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-main fullwidth">
+                <div class="container">
+                    <jdoc:include type="modules" name="navbar" />
+                </div>
+            </div>
+        </div>
     </header>
     
-    <div class="container">
+    <main class="container">
         <div class="row">
             <div class="col-12">
                 <jdoc:include type="component" />
@@ -31,7 +59,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
                 <i class="fab fa-github-square"></i>
             </div>
         </div>
-    </div>
+    </main>
 
     <jdoc:include type="modules" name="debug" />
     <script src="templates/horscadre/build/app.js"></script>
