@@ -1,4 +1,5 @@
 .header {
+  // position: relative;
   background-color: $brand-yellow;
 
   @include media-breakpoint-up(lg) {
@@ -14,8 +15,15 @@
       &.navbar-main {
         position: relative;
         top: -($spacer * 1.5);
-        padding-top: $spacer;
         background-color: $white;
+
+        .container {
+          padding-top: $spacer * 2;
+          background-image: url("../img/rvb.svg");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: calc(100% - #{$spacer}) $spacer / 2;
+        }
       }
     }
   }
@@ -45,5 +53,26 @@
 .navbar-brand {
   img {
     width: 200px;
+
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      left: -4px;
+    }
+  }
+}
+
+.finder {
+  .form-control,
+  .btn {
+    border-color: $brand-yellow;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+
+    .form-search {
+      padding-top: $spacer / 2;
+      padding-bottom: $spacer / 2;
+    }
   }
 }

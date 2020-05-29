@@ -35,5 +35,8 @@ if (isset($doc->_script['text/javascript']))
     }
 }
 
+// Google fonts
+$doc->addStyleSheet('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
 // css
 $doc->addStyleSheet($tpath.'/build/main.css');
