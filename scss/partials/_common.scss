@@ -1,3 +1,20 @@
+h1,
+h3,
+.h1,
+.h3 {
+  margin-bottom: $spacer;
+  color: $brand-green;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  a {
+    color: $body-color;
+  }
+}
+
 .fullwidth {
   @include media-breakpoint-up(lg) {
     width: 100vw;
@@ -6,5 +23,12 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+  }
+}
+
+.wfpopup {
+  &.wf-zoom-image {
+    display: block;
+    text-align: center;
   }
 }

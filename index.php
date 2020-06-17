@@ -52,17 +52,22 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
     
     <main class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-lg-8">
+                <jdoc:include type="modules" name="breadcrumbs" />
                 <jdoc:include type="component" />
-                <i class="fas fa-user"></i>
-                <i class="far fa-user"></i>
-                <i class="fab fa-github-square"></i>
+                <jdoc:include type="modules" name="component-below" />
+            </div>
+
+            <div class="col-lg-3 offset-lg-1">
+                <div class="sidebar">
+                    <jdoc:include type="modules" name="sidebar" />
+                </div>
             </div>
         </div>
     </main>
 
     <jdoc:include type="modules" name="debug" />
-    <script src="templates/horscadre/build/app.js"></script>
+    <!-- <script src="templates/horscadre/build/app.js"></script> -->
     <script src="templates/horscadre/js/script.js"></script>
     <script src="templates/horscadre/js/offcanvas.js"></script>
 </body>

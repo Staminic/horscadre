@@ -1,0 +1,58 @@
+.sidebar {
+  .wrapper {
+    padding: $grid-gutter-width / 2;
+    background-color: $gray-100;
+    border: 1px solid $gray-300;
+    border-radius: $border-radius-lg;
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+// Agenda
+.agenda {
+  .newsflash-item {
+    p {
+      margin: 0;
+    }
+  }
+
+  .article-separator {
+    display: block;
+    height: $spacer;
+    line-height: $spacer;
+    margin-top: $spacer;
+    border-top: 1px solid $gray-300;
+  }
+}
+
+.agendaDate,
+.agendaLieu {
+  display: flex;
+  color: $gray-600;
+  font-size: 90%;
+  font-weight: $font-weight-bold;
+
+  &::before {
+    margin-right: $spacer / 4;
+    font-family: "Font Awesome 5 Free";
+  }
+}
+
+.agendaDate {
+  &::before {
+    content: "\f274";
+  }
+}
+
+.agendaLieu {
+  &::before {
+    content: "\f3c5";
+  }
+
+  strong {
+    font-weight: $font-weight-bold;
+  }
+}

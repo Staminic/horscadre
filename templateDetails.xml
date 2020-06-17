@@ -40,6 +40,7 @@
 		<position>slogan</position>
 		<position>breadcrumbs</position>
 		<position>sidebar</position>
+		<position>component-below</position>
 		<position>debug</position>
 	</positions>
 
