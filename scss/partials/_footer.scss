@@ -1,0 +1,13 @@
+footer {
+  padding-top: $spacer * 1.5;
+  padding-bottom: $spacer * 1.5;
+  background-color: $brand-yellow;
+
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-item {
+    flex: unset;
+  }
+}

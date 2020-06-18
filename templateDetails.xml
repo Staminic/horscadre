@@ -38,9 +38,11 @@
 		<position>navbar</position>
 		<position>navbar-above</position>
 		<position>slogan</position>
+		<position>content-above</position>
 		<position>breadcrumbs</position>
 		<position>sidebar</position>
 		<position>component-below</position>
+		<position>footer</position>
 		<position>debug</position>
 	</positions>
 

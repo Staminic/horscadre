@@ -43,6 +43,11 @@
 .dropdown-item {
   font-family: $font-family-condensed;
   white-space: normal;
+
+  &.active,
+  &:active {
+    background-color: $brand-yellow;
+  }
 }
 
 .dropdown-toggle {
@@ -111,6 +116,7 @@
 }
 
 // offcanvas menu
+
 .offcanvas-collapse {
   z-index: 1;
 
@@ -190,5 +196,22 @@
   @include media-breakpoint-down(md) {
     position: static;
     float: none;
+  }
+}
+
+.offcanvas-flex-wrapper {
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(md) {
+    justify-content: space-between;
+  }
+
+  .custom {
+    @include media-breakpoint-down(md) {
+      img[style] {
+        margin-left: 0 !important;
+      }
+    }
   }
 }

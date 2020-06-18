@@ -64,7 +64,7 @@
 .finder {
   .form-control,
   .btn {
-    border-color: $brand-yellow;
+    border-color: transparent;
   }
 
   @include media-breakpoint-down(md) {

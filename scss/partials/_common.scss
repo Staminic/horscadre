@@ -5,7 +5,6 @@ h3,
   margin-bottom: $spacer;
   color: $brand-green;
   font-weight: $font-weight-bold;
-  text-transform: uppercase;
 }
 
 h2,
@@ -28,7 +27,6 @@ h2,
 
 .wfpopup {
   &.wf-zoom-image {
-    display: block;
-    text-align: center;
+    display: inline-block;
   }
 }

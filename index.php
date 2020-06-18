@@ -51,8 +51,12 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
     </header>
     
     <main class="container">
+        <jdoc:include type="modules" name="content-above" style="html5"/>
+
         <div class="row">
             <div class="col-lg-8">
+                <jdoc:include type="message" />
+
                 <jdoc:include type="modules" name="breadcrumbs" />
                 <jdoc:include type="component" />
                 <jdoc:include type="modules" name="component-below" />
@@ -65,6 +69,12 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="container">
+            <jdoc:include type="modules" name="footer" />
+        </div>
+    </footer>
 
     <jdoc:include type="modules" name="debug" />
     <!-- <script src="templates/horscadre/build/app.js"></script> -->

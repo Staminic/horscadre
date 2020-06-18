@@ -1,0 +1,10 @@
+.breadcrumb {
+  a.pathway[href*="#"] {
+    color: $body-color;
+
+    &:hover {
+      cursor: default;
+      text-decoration: none;
+    }
+  }
+}
