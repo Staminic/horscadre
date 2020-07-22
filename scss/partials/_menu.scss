@@ -215,3 +215,20 @@
     }
   }
 }
+
+// in article
+
+.nav-pills {
+  .dropdown-header {
+    display: none;
+  }
+
+  .nav-item {
+    margin: $nav-link-padding-y $nav-link-padding-x;
+    flex-basis: 45%;
+  }
+
+  .article-hide {
+    display: none;
+  }
+}

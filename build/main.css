@@ -15164,6 +15164,10 @@ main {
   padding-bottom: 4rem;
 }
 
+.item-page {
+  padding-bottom: 3rem;
+}
+
 .header {
   background-color: #ededa7;
 }
@@ -15414,6 +15418,17 @@ main {
   .offcanvas-flex-wrapper .custom img[style] {
     margin-left: 0 !important;
   }
+}
+
+.nav-pills .dropdown-header {
+  display: none;
+}
+.nav-pills .nav-item {
+  margin: 0.5rem 1rem;
+  flex-basis: 45%;
+}
+.nav-pills .article-hide {
+  display: none;
 }
 
 .sidebar .wrapper {

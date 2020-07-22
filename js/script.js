@@ -12,4 +12,5 @@ jQuery(function ($) {
 		});
 	});
 
+	$('.subnav > a').removeClass('dropdown-item');
 });
