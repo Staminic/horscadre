@@ -15136,9 +15136,22 @@ h3,
   font-weight: 700;
 }
 
+h2,
+.h2 {
+  margin-top: 2.5rem;
+}
 h2 a,
 .h2 a {
   color: #212529;
+}
+
+small,
+.small {
+  line-height: 1;
+}
+
+p.small {
+  margin-top: 0.25rem;
 }
 
 @media (min-width: 992px) {
@@ -15154,6 +15167,11 @@ h2 a,
 
 .wfpopup.wf-zoom-image {
   display: inline-block;
+}
+
+.wf_caption span {
+  margin-top: 0.25rem;
+  font-size: 80%;
 }
 
 body {

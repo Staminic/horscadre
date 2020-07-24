@@ -9,9 +9,20 @@ h3,
 
 h2,
 .h2 {
+  margin-top: $spacer * 2.5;
+
   a {
     color: $body-color;
   }
+}
+
+small,
+.small {
+  line-height: 1;
+}
+
+p.small {
+  margin-top: 0.25rem;
 }
 
 .fullwidth {
@@ -28,5 +39,12 @@ h2,
 .wfpopup {
   &.wf-zoom-image {
     display: inline-block;
+  }
+}
+
+.wf_caption {
+  span {
+    margin-top: 0.25rem;
+    font-size: 80%;
   }
 }
