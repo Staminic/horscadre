@@ -54,15 +54,33 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
         <jdoc:include type="modules" name="content-above" style="html5"/>
 
         <div class="row">
+            <?php if(($menu->getActive() == $menu->getDefault())) : ?>
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="wrapper">
+                        <jdoc:include type="modules" name="sidebar-home" />
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
+            
+            <?php if(($menu->getActive() == $menu->getDefault())) : ?>
+            <div class="col-lg-6">
+            <?php else : ?>
             <div class="col-lg-8">
+            <?php endif; ?>
                 <jdoc:include type="message" />
 
                 <jdoc:include type="modules" name="breadcrumbs" />
                 <jdoc:include type="component" />
                 <jdoc:include type="modules" name="component-below" />
             </div>
-
+            
+            <?php if(($menu->getActive() == $menu->getDefault())) : ?>
+            <div class="col-lg-3">
+            <?php else : ?>
             <div class="col-lg-3 offset-lg-1">
+            <?php endif; ?>
                 <div class="sidebar">
                     <jdoc:include type="modules" name="sidebar" />
                 </div>

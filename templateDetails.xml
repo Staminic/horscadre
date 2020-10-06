@@ -41,6 +41,7 @@
 		<position>content-above</position>
 		<position>breadcrumbs</position>
 		<position>sidebar</position>
+		<position>sidebar-home</position>
 		<position>component-below</position>
 		<position>footer</position>
 		<position>debug</position>
