@@ -22,7 +22,7 @@ $doc->addStyleSheet('https://fonts.googleapis.com/css2?family=Roboto+Condensed:w
 $doc->addStyleSheet($tpath.'/build/main.css');
 
 JHtml::_('jquery.framework');
-$doc->addScript('https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', '', array('integrity' => 'sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', 'crossorigin' => 'anonymous', 'defer' => 'defer'));
+$doc->addScript('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', '', array('integrity' => 'sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN', 'crossorigin' => 'anonymous', 'defer' => 'defer'));
 $doc->addScript($tpath . '/js/bootstrap.min.js', '', array('defer' => 'defer'));
 
 // unset
