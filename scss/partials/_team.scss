@@ -1,0 +1,26 @@
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .card {
+    margin: $spacer;
+    margin-bottom: $spacer * 2;
+    max-width: 180px;
+    border: none;
+  }
+
+  .card-body {
+    padding-bottom: 0;
+  }
+
+  .card-footer {
+    background: none;
+  }
+
+  .card-img-top {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+  }
+}

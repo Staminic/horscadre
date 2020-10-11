@@ -15,6 +15,16 @@ $this->setGenerator(null);
 // responsive meta tag (recommended in Bootstrap 4 doc)
 $doc->setMetadata('viewport', 'width=device-width, initial-scale=1, shrink-to-fit=no');
 
+// favicons
+JDocumentHTML::addHeadLink('/templates/horscadre/img/favicons/apple-touch-icon.png', 'apple-touch-icon', 'rel', array('sizes' => '180x180'));
+JDocumentHTML::addHeadLink('/templates/horscadre/img/favicons/favicon-32x32.png', 'icon', 'rel', array('sizes' => '32x32', 'type' => 'image/png'));
+JDocumentHTML::addHeadLink('/templates/horscadre/img/favicons/favicon-16x16.png', 'icon', 'rel', array('sizes' => '16x16', 'type' => 'image/png'));
+JDocumentHTML::addHeadLink('/templates/horscadre/img/favicons/site.webmanifest', 'manifest', 'rel');
+JDocumentHTML::addHeadLink('/templates/horscadre/img/favicons/safari-pinned-tab.svg', 'mask-icon', 'rel', array('color' => '#7b7b7b'));
+JDocumentHTML::addHeadLink('/templates/horscadre/img/favicons/favicon.ico', 'shortcut icon', 'rel');
+$doc->setMetadata('msapplication-TileColor', '#95c154');
+$doc->setMetadata('msapplication-config', '/templates/horscadre/img/favicons/browserconfig.xml');
+
 // Google fonts
 $doc->addStyleSheet('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 

@@ -14715,4 +14715,27 @@ div.pagination {
   cursor: default;
   text-decoration: none;
 }
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team .card {
+  margin: 1rem;
+  margin-bottom: 2rem;
+  max-width: 180px;
+  border: none;
+}
+.team .card-body {
+  padding-bottom: 0;
+}
+.team .card-footer {
+  background: none;
+}
+.team .card-img-top {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+}
 /*# sourceMappingURL=main.css.map */
