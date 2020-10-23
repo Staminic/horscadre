@@ -26,7 +26,7 @@ if ($item->anchor_rel)
 	$attributes['rel'] = $item->anchor_rel;
 }
 
-$linktype = '<span>' . $item->title . '</span>';
+$linktype = '<div class="d-flex flex-column"><span class="title">' . $item->title . '</span><span class="subtitle">' . $item->note . '</span></div>';
 
 if ($item->menu_image)
 {

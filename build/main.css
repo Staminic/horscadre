@@ -14473,6 +14473,19 @@ main {
 .nav-link {
   font-family: "Roboto Condensed", sans-serif;
 }
+@media (min-width: 992px) {
+  .nav-link {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
 
 .dropdown-menu {
   margin-top: 0.2rem;
@@ -14493,6 +14506,9 @@ main {
   background-color: #ededa7;
 }
 
+.dropdown-toggle {
+  white-space: normal;
+}
 .dropdown-toggle::after {
   vertical-align: 0.175rem;
 }
@@ -14526,6 +14542,27 @@ main {
   .navbar-main .nav-item:last-child .nav-link {
     border-right: none;
   }
+}
+
+.nav-link .subtitle {
+  margin-top: 0.125rem;
+  padding-top: 0.125rem;
+  border-top: 1px solid #fff;
+  font-size: 0.8125rem;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+.dropdown-toggle .title::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
 }
 
 .navbar-toggler {
@@ -14627,6 +14664,17 @@ main {
   }
 }
 
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    background-color: transparent;
+    border: none;
+    box-shadow: none !important;
+  }
+
+  .dropdown-item {
+    color: #fff;
+  }
+}
 .nav-pills .dropdown-header {
   display: none;
 }
