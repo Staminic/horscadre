@@ -36,7 +36,7 @@
     "jquery": ">=3.5.1",
     "popper.js": ">=1.16.1",
     "postcss-flexboxfixer": "0.0.5",
-    "tar": ">=6.0.5"
+    "tar": ">=6.1.9"
   },
   "dependencies": {}
 }
